@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'rikMaterialBootstrapTemplate';
+  // Example of State
+  count = 0;
+  // Example counter
+  counter(){
+    this.count++;
+  }
+  subtractor(){
+    this.count--;
+  }
 }
