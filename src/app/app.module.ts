@@ -4,10 +4,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 // Angular Material Imports
 import { MatSliderModule } from '@angular/material/slider';
 import { MatButtonModule } from '@angular/material/button';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment'
 
@@ -19,8 +21,11 @@ import { environment } from '../environments/environment'
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule,
     // Angular Material Modules
     MatSliderModule,
+    MatSlideToggleModule,
     MatButtonModule,
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: environment.production,
