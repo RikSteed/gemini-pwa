@@ -109,7 +109,7 @@ $rikMaterialBootstrapTemplate-theme: mat.define-light-theme((
 
 /* You can add global styles to this file, and also import other style files */
 
-@import "~bootstrap/dist/css/bootstrap.css";
+@import "~bootstrap/dist/css/bootstrap-grid.css";
 
 // Set Font Globally
 *{ font-family: "Heebo", sans-serif !important; }
