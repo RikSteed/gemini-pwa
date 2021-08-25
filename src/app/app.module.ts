@@ -5,13 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment'
 
 // Angular Material Imports
 import { MatSliderModule } from '@angular/material/slider';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
-import { ServiceWorkerModule } from '@angular/service-worker';
-import { environment } from '../environments/environment'
 
 @NgModule({
   declarations: [
@@ -27,6 +27,7 @@ import { environment } from '../environments/environment'
     MatSliderModule,
     MatSlideToggleModule,
     MatButtonModule,
+    // Service Worker
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: environment.production,
       // Register the ServiceWorker as soon as the app is stable
