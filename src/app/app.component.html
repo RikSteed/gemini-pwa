@@ -25,11 +25,14 @@
 </p>
 
 <h2>Toggle Dark/Light Mode</h2>
-
+<!-- Toggle with formControl -->
+<!-- https://material.angular.io/components/slide-toggle/overview -->
 <mat-slide-toggle [formControl]="toggleTheme">Toggle Theme</mat-slide-toggle>
 
 <h2>Material Slider</h2>
 
+<!-- Slider Material -->
+<!-- https://material.angular.io/components/slider/overview -->
   <mat-slider color="primary" aria-label="unit(s)"></mat-slider> &nbsp;
   <p>Count: {{count}}</p>
   <button (click)="counter()" mat-flat-button color="primary">Count</button> &nbsp;
