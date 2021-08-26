@@ -1,4 +1,4 @@
-<div class="container-fluid" style="padding: 1rem;">
+<div class="container" style="padding: 10px;">
 <!-- Typography: https://material.io/archive/guidelines/style/typography.html#typography-styles -->
   <h1>Example page, check if everything works</h1>
 <hr>
@@ -6,16 +6,14 @@
 <!-- Grid sistem using RC of Bootstrap -->
 <!-- Link: https://getbootstrap.com/docs/5.1/layout/grid/ -->
 <h2>Bootstrap Container</h2>
-<div class="container-fluid">
-  <div style="height: 50px;" class="row">
-    <div style="background-color: #1E90FF;text-align: center;" class="col">
+  <div style="height: 100px;" class="row">
+    <div style="background-color: #1E90FF;text-align: center;" class="col-md">
       <h4>Column 1</h4>
     </div>
-    <div style="background-color: #ED6476;text-align: center;" class="col">
+    <div color="primary" style="background-color: #FF5704;text-align: center;" class="col-md">
       <h4>Column 2</h4>
     </div>
   </div>
-</div>
 
 <h2>Toggle Dark/Light Mode</h2>
 <!-- Toggle with formControl -->
@@ -26,9 +24,9 @@
 
 <!-- Slider Material -->
 <!-- https://material.angular.io/components/slider/overview -->
-  <mat-slider color="primary" aria-label="unit(s)"></mat-slider> &nbsp;
+  <mat-slider color="accent"></mat-slider> &nbsp;
   <p>Count: {{count}}</p>
-  <button (click)="counter()" mat-flat-button color="primary">Count</button> &nbsp;
+  <button (click)="counter()" mat-raised-button>Count</button> &nbsp;
   <button (click)="subtractor()" mat-flat-button color="accent">Subtract</button>
 
 <h2>Routing</h2>

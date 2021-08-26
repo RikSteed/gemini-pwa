@@ -11,69 +11,69 @@
 
 // Template Palette (Change when starting a new project)
 $templateprimary: (
-    50 : #eaf2ff,
-    100 : #cbddfe,
-    200 : #a8c7fd,
-    300 : #85b1fc,
-    400 : #6aa0fc,
-    500 : #508ffb,
-    600 : #4987fa,
-    700 : #407cfa,
-    800 : #3772f9,
-    900 : #2760f8,
-    A100 : #ffffff,
-    A200 : #ffffff,
-    A400 : #cedaff,
-    A700 : #b4c7ff,
-    contrast: (
-        50 : #000000,
-        100 : #000000,
-        200 : #000000,
-        300 : #000000,
-        400 : #000000,
-        500 : #000000,
-        600 : #000000,
-        700 : #ffffff,
-        800 : #ffffff,
-        900 : #ffffff,
-        A100 : #000000,
-        A200 : #000000,
-        A400 : #000000,
-        A700 : #000000,
-    )
+  50 : #e4f2ff,
+  100 : #bcdeff,
+  200 : #8fc8ff,
+  300 : #62b1ff,
+  400 : #40a1ff,
+  500 : #1e90ff,
+  600 : #1a88ff,
+  700 : #167dff,
+  800 : #1273ff,
+  900 : #0a61ff,
+  A100 : #ffffff,
+  A200 : #f5f8ff,
+  A400 : #c2d5ff,
+  A700 : #a8c3ff,
+  contrast: (
+      50 : #000000,
+      100 : #000000,
+      200 : #000000,
+      300 : #000000,
+      400 : #000000,
+      500 : #ffffff,
+      600 : #ffffff,
+      700 : #ffffff,
+      800 : #ffffff,
+      900 : #ffffff,
+      A100 : #000000,
+      A200 : #000000,
+      A400 : #000000,
+      A700 : #000000,
+  )
 );
 
 $templateaccent: (
-    50 : #edfaf9,
-    100 : #d3f2f0,
-    200 : #b5eae6,
-    300 : #97e1db,
-    400 : #81dad4,
-    500 : #6bd4cc,
-    600 : #63cfc7,
-    700 : #58c9c0,
-    800 : #4ec3b9,
-    900 : #3cb9ad,
-    A100 : #ffffff,
-    A200 : #d4fffb,
-    A400 : #a1fff6,
-    A700 : #88fff3,
-    contrast: (
-        50 : #000000,
-        100 : #000000,
-        200 : #000000,
-        300 : #000000,
-        400 : #000000,
-        500 : #000000,
-        600 : #000000,
-        700 : #000000,
-        800 : #000000,
-        900 : #000000,
-        A100 : #000000,
-        A200 : #000000,
-        A400 : #000000,
-        A700 : #000000,
-    )
+  50 : #ffebe1,
+  100 : #ffcdb4,
+  200 : #ffab82,
+  300 : #ff894f,
+  400 : #ff702a,
+  500 : #ff5704,
+  600 : #ff4f03,
+  700 : #ff4603,
+  800 : #ff3c02,
+  900 : #ff2c01,
+  A100 : #ffffff,
+  A200 : #fff4f2,
+  A400 : #ffc7bf,
+  A700 : #ffb0a6,
+  contrast: (
+      50 : #000000,
+      100 : #000000,
+      200 : #000000,
+      300 : #000000,
+      400 : #000000,
+      500 : #ffffff,
+      600 : #ffffff,
+      700 : #ffffff,
+      800 : #ffffff,
+      900 : #ffffff,
+      A100 : #000000,
+      A200 : #000000,
+      A400 : #000000,
+      A700 : #000000,
+  )
 );
 
 // Template Font (Change when starting a new project)
@@ -88,7 +88,6 @@ $rikMaterialBootstrapTemplate-accent: mat.define-palette($templateaccent);
 // The warn palette is optional (defaults to red).
 $rikMaterialBootstrapTemplate-warn: mat.define-palette(mat.$red-palette);
 
-$rikmaterialBootstrapTemplate-typography: mat.define-typography-config($font-family: "'Heebo', sans-serif");
 // Create the theme object. A theme consists of configurations for individual
 // theming systems such as "color" or "typography".
 $rikMaterialBootstrapTemplate-light-theme: mat.define-light-theme((
@@ -98,8 +97,6 @@ $rikMaterialBootstrapTemplate-light-theme: mat.define-light-theme((
     accent: $rikMaterialBootstrapTemplate-accent,
     warn: $rikMaterialBootstrapTemplate-warn,
   ),
-  // Set Angular Typography
-  typography: $rikmaterialBootstrapTemplate-typography,
 ));
 $rikMaterialBootstrapTemplate-dark-theme: mat.define-dark-theme((
   // Set Angular Colors
@@ -108,8 +105,6 @@ $rikMaterialBootstrapTemplate-dark-theme: mat.define-dark-theme((
     accent: $rikMaterialBootstrapTemplate-accent,
     warn: $rikMaterialBootstrapTemplate-warn,
   ),
-  // Set Angular Typography
-  typography: $rikmaterialBootstrapTemplate-typography,
 ));
 
 // Include theme styles for core and each component used in your app.
