@@ -17,13 +17,6 @@
   </div>
 </div>
 
-<!-- Placeholder using Bootstrap -->
-<!-- Link: https://getbootstrap.com/docs/5.1/components/ -->
-<h2>Bootstrap Placeholder</h2>
-<p class="placeholder-glow">
-  <a href="#" class="btn btn-primary disabled placeholder col-4" aria-hidden="true"></a>
-</p>
-
 <h2>Toggle Dark/Light Mode</h2>
 <!-- Toggle with formControl -->
 <!-- https://material.angular.io/components/slide-toggle/overview -->
@@ -37,4 +30,12 @@
   <p>Count: {{count}}</p>
   <button (click)="counter()" mat-flat-button color="primary">Count</button> &nbsp;
   <button (click)="subtractor()" mat-flat-button color="accent">Subtract</button>
+
+<h2>Routing</h2>
+<!-- Angular Routing -->
+<button routerLink="page1" mat-flat-button color="primary">Page 1</button> &nbsp;
+<button routerLink="page2" mat-flat-button color="accent">Page 2</button>
+
+<router-outlet></router-outlet>
 </div>
+
